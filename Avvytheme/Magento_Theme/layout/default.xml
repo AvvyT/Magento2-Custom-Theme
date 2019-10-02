@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--Declaring theme logo-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/custom-design.svg</argument>
+                <argument name="logo_alt" xsi:type="string">Avvys Design</argument>
+                <argument name="logo_img_width" xsi:type="number">200</argument>
+                <argument name="logo_img_height" xsi:type="number">45</argument>
+        </arguments>
+        </referenceBlock>
+       <referenceBlock name="copyright" remove="true"></referenceBlock>
+    </body>
+</page>
