@@ -1,4 +1,59 @@
+@color-avvy: #e6005c;
+@links:purple;
+
 body{
-  background-color: @color-gray19;
+  background: url('/@{baseDir}/pub/media/bg.jpeg') no-repeat;
+  min-height: calc(100vh);
+  background-size: cover;
   color: @color-white;
+  font-family: "Apple Chancery";
 }
+
+//**-----header------**//
+.action.primary{
+  background: @color-avvy;
+  border: 2px solid black;
+}
+
+.minicart-wrapper .action.showcart:before{
+  color: @color-avvy;
+}
+
+.logo img{
+  height: inherit;
+  margin-left: 225%;
+  width: 100%;
+}
+.page-header .panel.wrapper{
+  background-color: #ffe6f0;
+  color: mediumpurple;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page-header .panel.wrapper a{
+  color: mediumpurple;
+  text-decoration: none;
+}
+
+ .new_link >h2{
+   margin-left: 10px;
+}
+
+.header.panel  .header.links  li a{
+  color: mediumpurple;
+}
+
+.header.panel  .header.links  li a:visited{
+  color: midnightblue;
+}
+
+//**-----footer------**//
+.footer.content .links a{
+  color: @color-avvy;
+}
+
+.page-footer{
+  padding-bottom: 0;
+}
+
