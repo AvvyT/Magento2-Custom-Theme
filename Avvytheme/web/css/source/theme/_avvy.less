@@ -1,11 +1,15 @@
 @color-avvy: #e6005c;
 @links:purple;
 
+ html .cms-home{
+   background: url('/@{baseDir}/pub/media/img2.jpg') no-repeat;
+   background-size: cover;
+   color: @color-white;
+   padding: 10px;
+   height: auto;
+}
+
 body{
-  background: url('/@{baseDir}/pub/media/bg.jpeg') no-repeat;
-  min-height: calc(100vh);
-  background-size: cover;
-  color: @color-white;
   font-family: "Apple Chancery";
 }
 
@@ -25,35 +29,43 @@ body{
   width: 100%;
 }
 .page-header .panel.wrapper{
-  background-color: #ffe6f0;
-  color: mediumpurple;
+  background-color: lightyellow;
+  border-radius: 10px;
+  color: black;
   text-decoration: none;
   font-weight: bold;
 }
 
 .page-header .panel.wrapper a{
-  color: mediumpurple;
+  color: black;
   text-decoration: none;
 }
 
- .new_link >h2{
+ .new_link >p{
    margin-left: 10px;
-}
-
-.header.panel  .header.links  li a{
-  color: mediumpurple;
 }
 
 .header.panel  .header.links  li a:visited{
   color: midnightblue;
 }
 
-//**-----footer------**//
+//**-----content------**//
+.navigation, .header.content {
+  border-radius: 10px 10px 0 0;
+  background: #f4f4f4;
+}
+
+.navigation .level0 .level-top{
+  font-size: 18px;
+}
+
+  //**-----footer------**//
 .footer.content .links a{
   color: @color-avvy;
 }
 
 .page-footer{
+  border-radius: 0 0 10px 10px;
   padding-bottom: 0;
 }
 
