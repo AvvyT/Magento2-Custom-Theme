@@ -1,71 +1,79 @@
 @color-avvy: #e6005c;
-@links:purple;
+@links     : purple;
 
- html .cms-home{
-   background: url('/@{baseDir}/pub/media/img2.jpg') no-repeat;
-   background-size: cover;
-   color: @color-white;
-   padding: 10px;
-   height: auto;
+html .cms-home {
+  background     : url('https://www.sigmabeauty.com/media/wysiwyg/home/Holidays_Promotion_Lipstick_DESKTOP_2880x1444.jpg') no-repeat;
+  background-size: cover;
+  color          : @color-white;
+  height         : auto;
+  text-align     : center;
 }
 
-body{
+body {
   font-family: "Apple Chancery";
 }
 
 //**-----header------**//
-.action.primary{
-  background: @color-avvy;
-  border: 2px solid black;
+.navigation,
+.header.content {
+  background: black;
+  color     : white;
 }
 
-.minicart-wrapper .action.showcart:before{
+.navigation .level0 .level-top {
+  font-size: 18px;
+  color    : white;
+}
+
+.action.primary {
+  background: @color-avvy;
+  border    : 2px solid black;
+}
+
+.minicart-wrapper .action.showcart:before {
   color: @color-avvy;
 }
 
-.logo img{
-  height: inherit;
+.logo img {
+  height     : inherit;
   margin-left: 225%;
-  width: 100%;
+  width      : 100%;
 }
-.page-header .panel.wrapper{
-  background-color: lightyellow;
-  border-radius: 10px;
-  color: black;
+
+.page-header .panel.wrapper {
+  color          : white;
+  background     : black;
   text-decoration: none;
-  font-weight: bold;
+  font-weight    : bold;
 }
 
-.page-header .panel.wrapper a{
-  color: black;
+.page-header .panel.wrapper a {
+  color          : white;
   text-decoration: none;
 }
 
- .new_link >p{
-   margin-left: 10px;
+.new_link>p {
+  margin-left: 10px;
 }
 
-.header.panel  .header.links  li a:visited{
+.header.panel .header.links li a:visited {
   color: midnightblue;
 }
 
 //**-----content------**//
-.navigation, .header.content {
-  border-radius: 10px 10px 0 0;
-  background: #f4f4f4;
-}
 
-.navigation .level0 .level-top{
-  font-size: 18px;
-}
-
-  //**-----footer------**//
-.footer.content .links a{
+//**-----footer------**//
+.footer.content .links a {
   color: @color-avvy;
 }
 
-.page-footer{
-  border-radius: 0 0 10px 10px;
-  padding-bottom: 0;
+.footer.content .links a:visited {
+  color: inherit;
+  
 }
 
+.page-footer {
+  border-radius : 0 0 10px 10px;
+  padding-bottom: 0;
+  background    : black;
+}
