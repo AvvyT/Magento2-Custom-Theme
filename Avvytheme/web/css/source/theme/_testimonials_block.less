@@ -6,6 +6,13 @@
   height     : 300px;
 }
 
+.block-wrapper {
+  overflow   : hidden;
+  font-family: Merriweather;
+  text-align : center;
+  height     : auto;
+}
+
 .widget-box .widget-wrapper,
 .widget-wrapper {
   overflow   : hidden;
@@ -62,11 +69,28 @@
 
 //*----------controls------------*//
 .owl-controls {
-  color      : black;
+  color      : white;
   font-size  : 14px;
-  margin     : 5px;
   padding    : 4px 7px;
   display    : block;
   cursor     : pointer;
   font-weight: bold;
+}
+
+.owl-buttons {
+  margin-left: 44%;
+}
+
+.owl-prev,
+.owl-next {
+  float        : left;
+  padding      : 10px;
+  margin       : 5px;
+  background   : lightgray;
+  border-radius: 50%;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+  color: #e6005c;
 }

@@ -1,16 +1,20 @@
 @color-avvy: #e6005c;
 @links     : purple;
 
+html {
+  text-align: center;
+}
+
 html .cms-home {
   background     : url('https://www.sigmabeauty.com/media/wysiwyg/home/Holidays_Promotion_Lipstick_DESKTOP_2880x1444.jpg') no-repeat;
   background-size: cover;
   color          : @color-white;
   height         : auto;
-  text-align     : center;
 }
 
 body {
   font-family: "Apple Chancery";
+  color      : @color-avvy;
 }
 
 //**-----header------**//
@@ -23,6 +27,16 @@ body {
 .navigation .level0 .level-top {
   font-size: 18px;
   color    : white;
+}
+
+.navigation .level0 .level-top:hover {
+  color: @color-avvy;
+}
+
+.navigation .level0.has-active>.level-top,
+.navigation .level0.active>.level-top {
+  border-color: @color-avvy ;
+  color       : inherit;
 }
 
 .action.primary {
@@ -38,6 +52,12 @@ body {
   height     : inherit;
   margin-left: 225%;
   width      : 100%;
+}
+
+.logo img {
+  &:hover {
+    fill: white;
+  }
 }
 
 .page-header .panel.wrapper {
@@ -63,13 +83,19 @@ body {
 //**-----content------**//
 
 //**-----footer------**//
+.footer.content .links li,
 .footer.content .links a {
   color: @color-avvy;
 }
 
+.footer.content .links li:hover,
+.footer.content .links a:hover {
+  color: white;
+}
+
 .footer.content .links a:visited {
   color: inherit;
-  
+
 }
 
 .page-footer {
